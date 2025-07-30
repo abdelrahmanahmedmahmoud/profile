@@ -1,0 +1,180 @@
+*{
+ scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+#navbar {
+    background-color: #cc0000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+    height: 10%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+#navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: color 0.3s;
+}
+#navbar li a:hover {
+    color: #ff6c6c;
+}
+#home{
+    background-image: linear-gradient(to right, #636363, #0f0f0f);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+    margin-top: 4%;
+    width: 100%;
+
+}
+#home h1 {
+    color: #ccc;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+#home p {
+    color: #ccc;
+    font-size: 1.2em;
+}
+#skills{
+    background-color: #ff0000;
+    padding: 20px;
+    color: white;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+#skills h1 {
+    font-size: 2em;
+    margin:0 auto;
+}
+#skills div {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+    align-items: center;
+        margin-left: 10px;
+    margin-right: 10px;
+}
+#skills div div {
+    width: 90%;
+    display: flex;
+    padding: 0;
+    background-color: rgb(170, 170, 255);
+    height: 20%;
+    border-radius: 20px;
+    justify-content: flex-start;
+}
+#skills div div div{
+    width: 90%;
+    transition: all 0.3s ease;
+    background-color: rgb(41, 41, 255);
+    height: 100%;
+    border-radius: 20px;
+    margin: 0;
+}
+#projects{
+    background-image: linear-gradient(to right, #636363, #0f0f0f);
+    padding: 20px;
+    color: white;
+    height: 600px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#projects h1 {
+    font-size: 2em;
+    margin:0 auto;
+}
+#projects h4{
+    margin: 50px auto;
+}
+#projects div {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+    align-items: center;
+    height: 90%;
+}
+#projects div div {
+    width: 35%;
+    background-color: #ff0000;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 20px;
+    justify-content: center;
+}
+#projects div div a {
+    text-decoration: none;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: space-around;
+
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+#projects div div a h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+#projects h1{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+#projects div div a p {
+    font-size: 1em;
+    text-align: center;
+    margin: 10px 0;
+    color: #ccc;
+}
+#projects div div a img {
+    width:90%;
+    height:90%;
+    border-radius: 15px;
+}
+#footer {
+    background-color: #cc0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    #projects div div a h3{
+        font-size: 1em;
+    }
+    #projects h1{
+        font-size: 1.2em;
+    }
+    #home h1{
+        font-size: 1.5em;
+    }
+}
